@@ -3,7 +3,7 @@
 Group Members:
 
 *
-*
+* Trisha Aurielle Andrea (35674938)
 *
 
 Topic: 
