@@ -1,0 +1,28 @@
+---
+title: "Methodology"
+author: "Xuan Hieu Nguyen (Mark)"
+format: html
+editor: visual
+---
+
+# Methodology {#sec-methodology}
+
+This dataset, which was augmented by Internet of Things (IoT) devices and Artificial Intelligence (AI) algorithms, was created to assess the efficacy of music education by gathering data on student performance, physiological data, engagement, and other metrics in a classroom context. The data mimics a learning environment in which students' physiological reactions, behavioral patterns, and numerous music performance indicators are tracked by IoT devices during music classes. With an emphasis on skill development, engagement, and performance outcomes, the dataset is organized to allow for study of the effects of music instruction. (["Music Education Performance Data." by Ziya](https://www.kaggle.com/datasets/ziya07/music-education-performance-data))
+
+In this research, we will be looking at 3 specific variables: `Class_Level`, and the 2 cardiovascular indicators in the data, which are `Heart_Rate` and `Blood_Pressure`. For simplicity purposes, we will only be looking at the first dataset, which is the one that has `Blood_Pressure` as one of its variables, as the new version does not have `Blood_Pressure`. In this data, there are a total of 3 different class levels: beginner, intermediate, and advanced. There are 100 observations in this data.
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(tidyverse)
+
+music_data = read_csv("music_dataset/music_education_dataset.csv") |>
+  # read in the data
+  select(Class_Level, Heart_Rate, Blood_Pressure) |>
+  # select the 3 columns
+  rename("Heart_Rate_(BPM)" = Heart_Rate,
+         "Blood_Pressure_(mmHg)" = Blood_Pressure)
+  # include units into heart rate and blood pressure
+```
+
+```{r fig-class_levels, fig.cap="Student counts of different class levels", echo=FALSE}
+music_data |> ggplot(aes(Class_Level)) + geom_bar()
+```
+@fig-class_levels graph shows the comparison of student counts in different class levels. There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even. To analyze this data, the students will be grouped by their class levels, and within those different class levels, we will try to find if there is any pattern or trend when looking at the heart rate and blood pressure of the students.
