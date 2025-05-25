@@ -1,0 +1,24 @@
+---
+title: "recommendation"
+format: html
+editor: visual
+---
+
+## Conclusion
+
+Results show a clear upward trend in both heart rate and blood pressure with class level:
+
+-   **Heart Rate**: Averages increase from 75 BPM (Beginner) to 85 BPM (Advanced).
+-   **Blood Pressure**: Rises from 120 mmHg to 130 mmHg across the same groups.
+
+This suggests that more advanced music training may be more physically or emotionally demanding. However, other factors such as stress, fitness, or individual variability could also influence these readings.
+
+## Recommendation
+
+1.Conduct longitudinal studies to track changes over time.
+
+2.Include stress or emotion-related variables for a fuller picture.
+
+3.Use physiological feedback to adapt teaching strategies.
+
+4.Ensure breaks and support for advanced students to manage workload.
