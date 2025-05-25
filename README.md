@@ -4,6 +4,6 @@ Group Members:
 
 * Mark (35614978)
 * Trisha Aurielle Andrea (35674938)
-* 
+* Jin Hu (34406476)
 
 Topic: Relationship between class level and some cardiovascular indicators of music students.
