@@ -5,23 +5,49 @@ format: html
 editor: visual
 ---
 
-## Quarto
+## Result
+This section examines the relationship between blood pressure and heart rate and class level among 100 music students in three different class levels: advanced, intermediate, and beginner.
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+1. Class Level Distribution:
+The chart below shows the number of students in each class level. The majority are in the Intermediate group, followed by Beginner and Advanced.
 
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+music_data <- read_csv("music_education_dataset.csv")
 ```
 
-You can add options to executable code like this
-
-```{r}
-#| echo: false
-2 * 2
+```{r, echo=FALSE}
+music_data |> 
+  ggplot(aes(Class_Level)) + 
+  geom_bar() + 
+  labs(title = "Student Distribution by Class Level")
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+2. Averages of blood pressure and heart rate:
+
+```{r, echo=FALSE}
+ggplot(music_data, aes(x = Class_Level, y = Heart_Rate)) + 
+  geom_boxplot() + 
+  labs(title = "Heart Rate by Class Level", y = "Heart Rate (BPM)", x = "Class Level")
+```
+Beginner: Average Heart Rate around 75 BPM
+
+Intermediate: Average Heart Rate around 80 BPM
+
+Advanced: Average Heart Rate around 85 BPM
+
+```{r, echo=FALSE}
+ggplot(music_data, aes(x = Class_Level, y = Blood_Pressure)) + 
+  geom_boxplot() + 
+  labs(title = "Blood Pressure by Class Level", y = "Blood Pressure (mmHg)", x = "Class Level")
+```
+
+Beginner: Blood Pressure around 120 mmHg
+
+Intermediate: Blood Pressure around 125 mmHg
+
+Advanced: Blood Pressure around 130 mmHg
+
+3. Trends:
+According to the research, Advanced students have slightly higher Heart Rate and Blood Pressure compared to both Beginner and intermediate students. Both variables show this pattern, which implies that higher class levels are linked to more physiological reactions.
+
