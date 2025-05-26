@@ -78,18 +78,19 @@ The Advanced group displays the highest median blood pressure, while Intermediat
 
 ## Conclusion
 
-Results show a clear upward trend in both heart rate and blood pressure with class level:
+The analysis shows an inverse relationship between heart rate and class level, and a direct relationship between blood pressure and class level:
 
--   **Heart Rate**: Averages increase from 75 BPM (Beginner) to 85 BPM (Advanced).
--   **Blood Pressure**: Rises from 120 mmHg to 130 mmHg across the same groups.
+-   **Heart Rate**: Beginners show the highest median heart rate (\~85 BPM), while Advanced students have the lowest (\~80 BPM). 
 
-This suggests that more advanced music training may be more physically or emotionally demanding. However, other factors such as stress, fitness, or individual variability could also influence these readings.
+-   **Blood Pressure**: In contrast, blood pressure tends to increase with class level—Beginners at \~118 mmHg and Advanced students at \~121 mmHg. 
+
+    The results show that beginner students have higher heart rates, while advanced students have higher blood pressure. This may indicate that beginners experience more performance anxiety, whereas advanced students face greater physical or cognitive demands during music instruction.
 
 ## Recommendation
 
-1.Conduct longitudinal studies to track changes over time.
+1.Collect additional data (e.g., stress levels) to better understand these physiological patterns.
 
-2.Include stress or emotion-related variables for a fuller picture.
+2.Support beginners with stress-reducing strategies.
 
 3.Use physiological feedback to adapt teaching strategies.
 
