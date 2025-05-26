@@ -34,6 +34,7 @@ music_data |> ggplot(aes(Class_Level)) + geom_bar()
 @fig-class_levels graph shows the comparison of student counts in different class levels. There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even. To analyze this data, the students will be grouped by their class levels, and within those different class levels, we will try to find if there is any pattern or trend when looking at the heart rate and blood pressure of the students.
 
 ## Result
+
 This result section looks at the relationship between blood pressure, heart rate, and class level among 100 music students in three groups: advanced, intermediate, and beginner.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
@@ -41,13 +42,14 @@ library(tidyverse)
 music_data <- read_csv("music_education_dataset.csv")
 ```
 
-#### Averages of heart rate 
+#### Averages of heart rate
 
 ```{r, echo=FALSE}
 ggplot(music_data, aes(x = Class_Level, y = Heart_Rate)) + 
   geom_boxplot() + 
   labs(title = "Heart Rate by Class Level", y = "Heart Rate (BPM)", x = "Class Level")
 ```
+
 Beginners: around 85 BPM
 
 Intermediate: around 83 BPM
@@ -56,7 +58,8 @@ Advanced: around 80 BPM
 
 The Beginner group displays the highest median heart rate, followed by Intermediate, and Advanced students with the lowest. This shows that students in higher class levels have lower heart rates.
 
-#### Averages of blood pressure 
+#### Averages of blood pressure
+
 ```{r, echo=FALSE}
 ggplot(music_data, aes(x = Class_Level, y =
 Blood_Pressure)) +
@@ -64,13 +67,14 @@ Blood_Pressure)) +
  labs(title = "Blood Pressure by Class Level", y
 = "Blood Pressure (mmHg)", x = "Class Level")
 ```
+
 Advanced: around 121 mmHg
 
 Intermediate: around 120 mmHg
 
 Beginner: around 118 mmHg
 
-The Advanced group display the highest median blood pressure, while Intermediate students follow closely, and Beginners have the lowest. This means students in higher class levels tend to have higher blood pressure.
+The Advanced group displays the highest median blood pressure, while Intermediate students follow closely, and Beginners have the lowest. This means students in higher class levels tend to have higher blood pressure.
 
 ## Conclusion
 
