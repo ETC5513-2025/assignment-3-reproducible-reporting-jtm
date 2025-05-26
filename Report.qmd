@@ -6,10 +6,10 @@ editor: visual
 ---
 
 ## Result
+
 This section examines the relationship between blood pressure and heart rate and class level among 100 music students in three different class levels: advanced, intermediate, and beginner.
 
-1. Class Level Distribution:
-The chart below shows the number of students in each class level. The majority are in the Intermediate group, followed by Beginner and Advanced.
+1.  Class Level Distribution: The chart below shows the number of students in each class level. The majority are in the Intermediate group, followed by Beginner and Advanced.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(tidyverse)
@@ -23,13 +23,14 @@ music_data |>
   labs(title = "Student Distribution by Class Level")
 ```
 
-2. Averages of blood pressure and heart rate:
+2.  Averages of blood pressure and heart rate:
 
 ```{r, echo=FALSE}
 ggplot(music_data, aes(x = Class_Level, y = Heart_Rate)) + 
   geom_boxplot() + 
   labs(title = "Heart Rate by Class Level", y = "Heart Rate (BPM)", x = "Class Level")
 ```
+
 Beginner: Average Heart Rate around 75 BPM
 
 Intermediate: Average Heart Rate around 80 BPM
@@ -48,6 +49,4 @@ Intermediate: Blood Pressure around 125 mmHg
 
 Advanced: Blood Pressure around 130 mmHg
 
-3. Trends:
-According to the research, Advanced students have slightly higher Heart Rate and Blood Pressure compared to both Beginner and intermediate students. Both variables show this pattern, which implies that higher class levels are linked to more physiological reactions.
-
+3.  Trends: According to the research, Advanced students have slightly higher Heart Rate and Blood Pressure compared to both Beginner and intermediate students. Both variables show this pattern, which implies that higher class levels are linked to more physiological reactions.
