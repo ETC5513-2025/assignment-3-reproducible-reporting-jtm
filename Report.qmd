@@ -4,6 +4,7 @@ author: "JTM"
 format: html
 editor: visual
 ---
+
 ## Introduction
 
 Music education not only enhances artistic skills but can also influence physiological and cognitive development in students. With the integration of Internet of Things (IoT) devices and Artificial Intelligence (AI) algorithms, it is now possible to collect and analyze real-time physiological and performance-related data in educational settings.This study explores the relationship between class level and physiological responses (heart rate and blood pressure) in music students. Using data collected via IoT devices, we analyzed 100 students across three class levels—Beginner, Intermediate, and Advanced—to examine whether more advanced training is linked to higher physiological activity.
@@ -36,8 +37,7 @@ music_data |> ggplot(aes(Class_Level)) + geom_bar()
 
 This section examines the relationship between blood pressure and heart rate and class level among 100 music students in three different class levels: advanced, intermediate, and beginner.
 
-1.  Class Level Distribution: 
-The chart below shows the number of students in each class level. The majority are in the Intermediate group, followed by Beginner and Advanced.
+1.  Class Level Distribution: The chart below shows the number of students in each class level. The majority are in the Intermediate group, followed by Beginner and Advanced.
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 library(tidyverse)
@@ -79,8 +79,23 @@ Intermediate: Blood Pressure around 125 mmHg
 
 Advanced: Blood Pressure around 130 mmHg
 
-3. Trends: 
-According to the research, Advanced students have slightly higher Heart Rate and Blood Pressure than Beginners and intermediate students. Both variables show this pattern, which implies that higher class levels are linked to more physiological reactions.
+3.  Trends: According to the research, Advanced students have slightly higher Heart Rate and Blood Pressure than Beginners and intermediate students. Both variables show this pattern, which implies that higher class levels are linked to more physiological reactions.
 
+## Conclusion
 
+Results show a clear upward trend in both heart rate and blood pressure with class level:
 
+-   **Heart Rate**: Averages increase from 75 BPM (Beginner) to 85 BPM (Advanced).
+-   **Blood Pressure**: Rises from 120 mmHg to 130 mmHg across the same groups.
+
+This suggests that more advanced music training may be more physically or emotionally demanding. However, other factors such as stress, fitness, or individual variability could also influence these readings.
+
+## Recommendation
+
+1.Conduct longitudinal studies to track changes over time.
+
+2.Include stress or emotion-related variables for a fuller picture.
+
+3.Use physiological feedback to adapt teaching strategies.
+
+4.Ensure breaks and support for advanced students to manage workload.
