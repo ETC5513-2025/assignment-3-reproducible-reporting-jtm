@@ -1,13 +1,9 @@
 ---
-title: "introduction"
-author: "JTM"
+title: "Methodology"
+author: "Xuan Hieu Nguyen (Mark)"
 format: html
 editor: visual
 ---
-
-## Introduction
-
-Music education not only enhances artistic skills but can also influence physiological and cognitive development in students. With the integration of Internet of Things (IoT) devices and Artificial Intelligence (AI) algorithms, it is now possible to collect and analyze real-time physiological and performance-related data in educational settings.This study explores the relationship between class level and physiological responses (heart rate and blood pressure) in music students. Using data collected via IoT devices, we analyzed 100 students across three class levels—Beginner, Intermediate, and Advanced—to examine whether more advanced training is linked to higher physiological activity.
 
 # Methodology {#sec-methodology}
 
@@ -32,4 +28,3 @@ music_data |> ggplot(aes(Class_Level)) + geom_bar()
 ```
 
 @fig-class_levels graph shows the comparison of student counts in different class levels. There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even. To analyze this data, the students will be grouped by their class levels, and within those different class levels, we will try to find if there is any pattern or trend when looking at the heart rate and blood pressure of the students.
-
