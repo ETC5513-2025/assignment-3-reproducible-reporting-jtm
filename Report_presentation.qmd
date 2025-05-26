@@ -1,12 +1,9 @@
 ---
 title: "Topic: Relationship between class level and some cardiovascular indicators of music students."
 author: "Jin, Trisha, and Mark"
-format: pdf
-toc: true
+format: revealjs
 editor: visual
 ---
-
-\newpage
 
 ## Introduction
 
@@ -16,7 +13,11 @@ Music education not only enhances artistic skills but can also influence physiol
 
 This dataset, which was augmented by Internet of Things (IoT) devices and Artificial Intelligence (AI) algorithms, was created to assess the efficacy of music education by gathering data on student performance, physiological data, engagement, and other metrics in a classroom context. The data mimics a learning environment in which students' physiological reactions, behavioral patterns, and numerous music performance indicators are tracked by IoT devices during music classes. With an emphasis on skill development, engagement, and performance outcomes, the dataset is organized to allow for study of the effects of music instruction. (["Music Education Performance Data." by Ziya](https://www.kaggle.com/datasets/ziya07/music-education-performance-data))
 
+---
+
 In this research, we will be looking at 3 specific variables: `Class_Level`, and the 2 cardiovascular indicators in the data, which are `Heart_Rate` and `Blood_Pressure`. For simplicity purposes, we will only be looking at the first dataset, which is the one that has `Blood_Pressure` as one of its variables, as the new version does not have `Blood_Pressure`. In this data, there are a total of 3 different class levels: beginner, intermediate, and advanced. There are 100 observations in this data.
+
+---
 
 ```{r, message=FALSE, warning=FALSE, echo=FALSE}
 library(tidyverse)
@@ -37,13 +38,15 @@ music_data |> ggplot(aes(Class_Level |> factor(levels = class_order))) +
   xlab("Class_Level")
 ```
 
-@fig-class_levels graph shows the comparison of student counts in different class levels. There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even. To analyze this data, the students will be grouped by their class levels, and within those different class levels, we will try to find if there is any pattern or trend when looking at the heart rate and blood pressure of the students.
+---
 
-\newpage
+@fig-class_levels graph shows the comparison of student counts in different class levels. There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even. To analyze this data, the students will be grouped by their class levels, and within those different class levels, we will try to find if there is any pattern or trend when looking at the heart rate and blood pressure of the students.
 
 ## Result
 
 This result section looks at the relationship between blood pressure, heart rate, and class level among 100 music students in three groups: advanced, intermediate, and beginner.
+
+---
 
 #### Averages of heart rate
 
@@ -60,7 +63,11 @@ Intermediate: around 83 BPM
 
 Advanced: around 80 BPM
 
+---
+
 The Beginner group displays the highest median heart rate, followed by Intermediate, and Advanced students with the lowest. This shows that students in higher class levels have lower heart rates.
+
+---
 
 #### Averages of blood pressure
 
@@ -78,6 +85,8 @@ Intermediate: around 120 mmHg
 
 Beginner: around 118 mmHg
 
+---
+
 The Advanced group displays the highest median blood pressure, while Intermediate students follow closely, and Beginners have the lowest. This means students in higher class levels tend to have higher blood pressure.
 
 ## Conclusion
@@ -87,6 +96,8 @@ The analysis shows an inverse relationship between heart rate and class level, a
 -   **Heart Rate**: Beginners show the highest median heart rate (\~85 BPM), while Advanced students have the lowest (\~80 BPM). 
 
 -   **Blood Pressure**: In contrast, blood pressure tends to increase with class level—Beginners at \~118 mmHg and Advanced students at \~121 mmHg. 
+
+---
 
 The results show that beginner students have higher heart rates, while advanced students have higher blood pressure. This may indicate that beginners experience more performance anxiety, whereas advanced students face greater physical or cognitive demands during music instruction.
 
@@ -100,10 +111,11 @@ The results show that beginner students have higher heart rates, while advanced 
 
 4.Ensure breaks and support for advanced students to manage workload.
 
-\newpage
-
 ## Reference
 
 -   R Core Team (2025). *R: A Language and Environment for Statistical Computing*. R Foundation for Statistical Computing, Vienna, Austria. <https://www.R-project.org/>.
 -   Wickham H, Averick M, Bryan J, Chang W, McGowan LD, François R, Grolemund G, Hayes A, Henry L, Hester J, Kuhn M, Pedersen TL, Miller E, Bache SM, Müller K, Ooms J, Robinson D, Seidel DP, Spinu V, Takahashi K, Vaughan D, Wilke C, Woo K, Yutani H (2019). “Welcome to the tidyverse.” *Journal of Open Source Software*, *4*(43), 1686. doi:10.21105/joss.01686 <https://doi.org/10.21105/joss.01686>.
+
+---
+
 -   Ziya. “Music Education Performance Data.” Kaggle.com, 2024, <http://www.kaggle.com/datasets/ziya07/music-education-performance-data>.
