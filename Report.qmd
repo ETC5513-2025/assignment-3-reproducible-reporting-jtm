@@ -10,7 +10,7 @@ editor: visual
 
 ## Introduction
 
-Music education not only enhances artistic skills but can also influence physiological and cognitive development in students. With the integration of Internet of Things (IoT) devices and Artificial Intelligence (AI) algorithms, it is now possible to collect and analyze real-time physiological and performance-related data in educational settings.This study explores the relationship between class level and physiological responses (heart rate and blood pressure) in music students. Using data collected via IoT devices, we analyzed 100 students across three class levels—Beginner, Intermediate, and Advanced—to examine whether more advanced training is linked to higher physiological activity.
+This study explores the relationship between class level and physiological responses (heart rate and blood pressure) in music students. Using data collected via IoT devices, we analyzed 100 students across three class levels—Beginner, Intermediate, and Advanced—to examine whether more advanced training is linked to higher physiological activity.
 
 ## Methodology {#sec-methodology}
 
