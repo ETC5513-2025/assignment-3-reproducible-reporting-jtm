@@ -11,11 +11,15 @@ This study explores the relationship between class level and physiological respo
 
 ## Methodology {#sec-methodology}
 
-This dataset, which was augmented by Internet of Things (IoT) devices and Artificial Intelligence (AI) algorithms, was created to assess the efficacy of music education by gathering data on student performance, physiological data, engagement, and other metrics in a classroom context. The data mimics a learning environment in which students' physiological reactions, behavioral patterns, and numerous music performance indicators are tracked by IoT devices during music classes. With an emphasis on skill development, engagement, and performance outcomes, the dataset is organized to allow for study of the effects of music instruction. (["Music Education Performance Data." by Ziya](https://www.kaggle.com/datasets/ziya07/music-education-performance-data))
+- Augmented by IoT devices and AI algorithms.
+- Gathers data on student performance, physiological data, engagement, and other metrics in a classroom context.
+- Mimics a learning environment in which students' physiological reactions, behavioral patterns, and numerous music performance indicators are tracked by IoT devices during music classes.
+- Organized to allow for study of the effects of music instruction.
 
 ------------------------------------------------------------------------
 
-In this research, we will be looking at 3 specific variables: `Class_Level`, and the 2 cardiovascular indicators in the data, which are `Heart_Rate` and `Blood_Pressure`. For simplicity purposes, we will only be looking at the first dataset, which is the one that has `Blood_Pressure` as one of its variables, as the new version does not have `Blood_Pressure`. In this data, there are a total of 3 different class levels: beginner, intermediate, and advanced. There are 100 observations in this data.
+- In this research, we will be looking at 3 specific variables: `Class_Level`, and the 2 cardiovascular indicators in the data, which are `Heart_Rate` and `Blood_Pressure`.
+- In this data, there are a total of 3 different class levels: beginner, intermediate, and advanced. There are 100 observations in this data.
 
 ------------------------------------------------------------------------
 
@@ -40,7 +44,9 @@ music_data |> ggplot(aes(Class_Level |> factor(levels = class_order))) +
 
 ------------------------------------------------------------------------
 
-@fig-class_levels graph shows the comparison of student counts in different class levels. There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even. To analyze this data, the students will be grouped by their class levels, and within those different class levels, we will try to find if there is any pattern or trend when looking at the heart rate and blood pressure of the students.
+- @fig-class_levels graph shows the comparison of student counts in different class levels.
+- There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even.
+- The students will be grouped by their class levels.
 
 ## Result
 
@@ -57,13 +63,13 @@ ggplot(music_data, aes(x = Class_Level |> factor(levels = class_order),
   labs(title = "Heart Rate by Class Level", y = "Heart Rate (BPM)", x = "Class Level")
 ```
 
+---
+
 Beginners: around 85 BPM
 
 Intermediate: around 83 BPM
 
 Advanced: around 80 BPM
-
-------------------------------------------------------------------------
 
 The Beginner group displays the highest median heart rate, followed by Intermediate, and Advanced students with the lowest. This shows that students in higher class levels have lower heart rates.
 
@@ -79,13 +85,13 @@ ggplot(music_data, aes(x = Class_Level |> factor(levels = class_order),
 = "Blood Pressure (mmHg)", x = "Class Level")
 ```
 
+---
+
 Advanced: around 121 mmHg
 
 Intermediate: around 120 mmHg
 
 Beginner: around 118 mmHg
-
-------------------------------------------------------------------------
 
 The Advanced group displays the highest median blood pressure, while Intermediate students follow closely, and Beginners have the lowest. This means students in higher class levels tend to have higher blood pressure.
 

@@ -140,15 +140,23 @@ Jin, Trisha, and Mark
 </section>
 <section id="introduction" class="slide level2">
 <h2>Introduction</h2>
-<p>Music education not only enhances artistic skills but can also influence physiological and cognitive development in students. With the integration of Internet of Things (IoT) devices and Artificial Intelligence (AI) algorithms, it is now possible to collect and analyze real-time physiological and performance-related data in educational settings.This study explores the relationship between class level and physiological responses (heart rate and blood pressure) in music students. Using data collected via IoT devices, we analyzed 100 students across three class levels—Beginner, Intermediate, and Advanced—to examine whether more advanced training is linked to higher physiological activity.</p>
+<p>This study explores the relationship between class level and physiological responses (heart rate and blood pressure) in music students. Using data collected via IoT devices, we analyzed 100 students across three class levels—Beginner, Intermediate, and Advanced—to examine whether more advanced training is linked to higher physiological activity.</p>
 </section>
 <section id="sec-methodology" class="slide level2">
 <h2>Methodology</h2>
-<p>This dataset, which was augmented by Internet of Things (IoT) devices and Artificial Intelligence (AI) algorithms, was created to assess the efficacy of music education by gathering data on student performance, physiological data, engagement, and other metrics in a classroom context. The data mimics a learning environment in which students’ physiological reactions, behavioral patterns, and numerous music performance indicators are tracked by IoT devices during music classes. With an emphasis on skill development, engagement, and performance outcomes, the dataset is organized to allow for study of the effects of music instruction. (<a href="https://www.kaggle.com/datasets/ziya07/music-education-performance-data">“Music Education Performance Data.” by Ziya</a>)</p>
+<ul>
+<li>Augmented by IoT devices and AI algorithms.</li>
+<li>Gathers data on student performance, physiological data, engagement, and other metrics in a classroom context.</li>
+<li>Mimics a learning environment in which students’ physiological reactions, behavioral patterns, and numerous music performance indicators are tracked by IoT devices during music classes.</li>
+<li>Organized to allow for study of the effects of music instruction.</li>
+</ul>
 </section>
 <section class="slide level2">
 
-<p>In this research, we will be looking at 3 specific variables: <code>Class_Level</code>, and the 2 cardiovascular indicators in the data, which are <code>Heart_Rate</code> and <code>Blood_Pressure</code>. For simplicity purposes, we will only be looking at the first dataset, which is the one that has <code>Blood_Pressure</code> as one of its variables, as the new version does not have <code>Blood_Pressure</code>. In this data, there are a total of 3 different class levels: beginner, intermediate, and advanced. There are 100 observations in this data.</p>
+<ul>
+<li>In this research, we will be looking at 3 specific variables: <code>Class_Level</code>, and the 2 cardiovascular indicators in the data, which are <code>Heart_Rate</code> and <code>Blood_Pressure</code>.</li>
+<li>In this data, there are a total of 3 different class levels: beginner, intermediate, and advanced. There are 100 observations in this data.</li>
+</ul>
 </section>
 <section class="slide level2">
 
@@ -158,7 +166,11 @@ Figure&nbsp;1: Student counts of different class levels
 </p></section>
 <section class="slide level2">
 
-<p><a href="#/fig-class_levels" class="quarto-xref">Figure&nbsp;1</a> graph shows the comparison of student counts in different class levels. There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even. To analyze this data, the students will be grouped by their class levels, and within those different class levels, we will try to find if there is any pattern or trend when looking at the heart rate and blood pressure of the students.</p>
+<ul>
+<li><a href="#/fig-class_levels" class="quarto-xref">Figure&nbsp;1</a> graph shows the comparison of student counts in different class levels.</li>
+<li>There are some differences in the distribution of students in the 3 class levels, but overall, it is still relatively even.</li>
+<li>The students will be grouped by their class levels.</li>
+</ul>
 </section>
 <section id="result" class="slide level2">
 <h2>Result</h2>
@@ -168,24 +180,24 @@ Figure&nbsp;1: Student counts of different class levels
 
 <h4 id="averages-of-heart-rate">Averages of heart rate</h4>
 
-<img data-src="Report_presentation_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"><p>Beginners: around 85 BPM</p>
-<p>Intermediate: around 83 BPM</p>
-<p>Advanced: around 80 BPM</p>
-</section>
+<img data-src="Report_presentation_files/figure-revealjs/unnamed-chunk-2-1.png" width="960" class="r-stretch"></section>
 <section class="slide level2">
 
+<p>Beginners: around 85 BPM</p>
+<p>Intermediate: around 83 BPM</p>
+<p>Advanced: around 80 BPM</p>
 <p>The Beginner group displays the highest median heart rate, followed by Intermediate, and Advanced students with the lowest. This shows that students in higher class levels have lower heart rates.</p>
 </section>
 <section class="slide level2">
 
 <h4 id="averages-of-blood-pressure">Averages of blood pressure</h4>
 
-<img data-src="Report_presentation_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"><p>Advanced: around 121 mmHg</p>
-<p>Intermediate: around 120 mmHg</p>
-<p>Beginner: around 118 mmHg</p>
-</section>
+<img data-src="Report_presentation_files/figure-revealjs/unnamed-chunk-3-1.png" width="960" class="r-stretch"></section>
 <section class="slide level2">
 
+<p>Advanced: around 121 mmHg</p>
+<p>Intermediate: around 120 mmHg</p>
+<p>Beginner: around 118 mmHg</p>
 <p>The Advanced group displays the highest median blood pressure, while Intermediate students follow closely, and Beginners have the lowest. This means students in higher class levels tend to have higher blood pressure.</p>
 </section>
 <section id="conclusion" class="slide level2">
